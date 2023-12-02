@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ans"></h1>
+    <h1  class="ans1"></h1>
+    <h1 id="ans1"></h1>
+    <script>
+        let arr = [2, 7, 11, 15,];
+        let total = 9;
+
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                if (arr[i] + arr[j] == total) {
+                    document.getElementById("ans").innerHTML = j;
+                    document.getElementById("ans1").innerHTML = i;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
